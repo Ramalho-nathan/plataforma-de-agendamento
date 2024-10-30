@@ -136,12 +136,15 @@
 
         form{
             width: 100%;
+            gap: 1rem;
 
             .input-group{
                 width: 100%;
+                
 
                 input{
                     width: 80%;
+                    height: 90%;
                 }
                 span{
                     left: 16%;

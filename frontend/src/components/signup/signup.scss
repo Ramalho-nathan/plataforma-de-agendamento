@@ -156,6 +156,14 @@
 
             .input-box{
                 width: 100%;
+
+                .input-group{
+                    height: 80%;
+
+                    input{
+                        height: 100%;
+                    }
+                }
             }
             
             .input-group{
@@ -163,6 +171,7 @@
 
                 input{
                     width: 90%;
+                    height: 80%;
                 }
                 span{
                     left: 10%;
