@@ -1,0 +1,186 @@
+.register{
+    position: absolute;
+    left: 0;
+    transform: translateY(920px);
+    color: #000;
+    width: 49%;
+    height: 100%;
+    color: #fff;
+    
+    .header{
+        width: 100%;
+        height: 10%;
+    }
+
+    .backform{
+        position: absolute;
+        top: 10%;
+        left: 6%;
+        color: #ccc;
+        p{
+            font-size: 14px;
+
+            span{
+                font-size: 16px;
+                color: #24AE7C;
+                font-weight: 600;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+        }
+    }
+    form{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .input-box{
+            width: 80%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .input-group{
+                width: 100%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                input{
+                    width: 80%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background-color: #1A1D21;
+                    border: 1px solid #363A3D;
+                    padding-left: 1.5rem;
+                    padding-top: 1rem;
+                    color: #fff;
+                    font-weight: 600;
+
+                    &:focus ~ span,
+                    &:valid ~ span{
+                        transform: translateY(-13px);
+                        font-size: 13px;
+                    }
+                }
+                span{
+                    position: absolute;
+                    left: 17%;
+                    pointer-events: none;
+                    transition: 200ms ease-in-out;
+                    font-size: 17px;
+                }
+                .eyes{
+                    position: absolute;
+                    right: 15%;
+                    font-size: 19px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .input-group{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            input{
+                width: 73%;
+                height: 70%;
+                border-radius: 10px;
+                background-color: #1A1D21;
+                border: 1px solid #363A3D;
+                padding-left: 1.5rem;
+                padding-top: 1rem;
+                color: #fff;
+                font-weight: 600;
+
+                &:focus ~ span,
+                &:valid ~ span{
+                    transform: translateY(-13px);
+                    font-size: 13px;
+                }
+            }
+            span{
+                position: absolute;
+                left: 18%;
+                pointer-events: none;
+                transition: 200ms ease-in-out;
+                font-size: 17px;
+            }
+
+        }
+        .btn{
+            margin-top: 2rem;
+            height: 7%;
+            width: 70%;
+        }
+    }
+    .terms{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        p{
+            font-size: 15px;
+
+            span{
+                color: #24AE7C;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .register{
+        width: 100%;
+
+
+        form{
+            width: 100%;
+
+            .input-box{
+                width: 100%;
+            }
+            
+            .input-group{
+                width: 100%;
+
+                input{
+                    width: 90%;
+                }
+                span{
+                    left: 10%;
+                }
+            }
+        }
+
+        .terms{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 1rem;
+
+            p{
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
